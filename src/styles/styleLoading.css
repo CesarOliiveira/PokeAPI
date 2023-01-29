@@ -1,0 +1,37 @@
+.content {
+    width: 300px;
+    background-color: #FFF;
+    padding: 14px;
+    border-radius: 4px;
+    
+}
+.card {
+    display: inline-block;
+}
+
+.card.loading h2 {
+    height: 30px;
+    margin-bottom: 12px;
+}
+.card.loading p {
+    height: 10px;
+}
+
+.card.loading h2,
+.card.loading p {
+    background: #fff;
+    background: linear-gradient(
+        110deg, #cfcfcf 8%,
+        #f7f6f6 18%,
+        #cfcfcf 33%
+    );
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s skeleton linear infinite;
+}
+
+@keyframes skeleton{
+    to{
+        background-position-x: -200%;
+    }
+}

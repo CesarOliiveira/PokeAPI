@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: min(100% - 15px, 1040px);
+    height: 100%;
+}
+
+.container-grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+/* Card Pokemon */
+.card-pokemon {
+    background: linear-gradient(
+        110deg, #292828 8%,
+        #050505 18%,
+        rgb(53, 51, 51) 33%
+    );
+    border-bottom-left-radius: 1.1rem;
+    border-bottom-right-radius: 1.1rem;
+    width: min(100% - 15px, 1fr);
+}
+.imagePokemon {
+    display: flex;
+    justify-content: center;
+}
+.imagePokemon img {
+    aspect-ratio: 3/4;
+    object-fit: contain;
+}
+
+/* Botão Sobre */
+.wrapp-button {
+    display: flex;
+    justify-content: center;
+}
+.wrap-button .button-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    background: rgb(0, 0, 0);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.wrap-button .button-about span {
+    color: white;
+}
+
+
+
+
+/* Informações sobre o Pokemon */
+
+.wrap-details {
+    margin: 0 auto;
+    color: white;
+    width: 350px;
+    background: #050505;
+}
